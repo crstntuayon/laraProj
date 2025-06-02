@@ -3,7 +3,7 @@
 
 
 
-<a href="{{ route('auth.logout') }}" class="btn btn-danger" style="float: right;">Logout</a>
+<a href="{{ route('auth.logout') }}" class="btn btn-danger" style="float: right;margin-top:20px; margin-right: 20px;">Logout</a>
 
 
 <div class="centered-div">
@@ -14,9 +14,12 @@
                     <div class="card-header">
                         <h4 style="float: left;"><strong>Student List</strong></h4>
                         <!-- Action btn for modal -->
+                       
                         <button type="button" class="btn btn-primary" style="float: right;" data-bs-toggle="modal" data-bs-target="#addNewModal">
                             Add New Students
                         </button>
+
+                        
                     </div>
 
                     @if(Session("success"))
